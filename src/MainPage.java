@@ -14,7 +14,9 @@ public class MainPage {
             public void actionPerformed(ActionEvent e) {
                 int temp = m.poll();
                 if(temp != 0){
+                    JOptionPane.showMessageDialog(null,"The next lucky person is number "+temp+" !");
                     label.setText(label.getText() + (temp) + " ");
+
                 } else {
                     JOptionPane.showMessageDialog(null,"Done!");
                 }
